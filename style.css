@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide {
+  max-width: 1200px;
+  height: 600px;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-inline: auto;
+  animation: shower 0.5s ease-in-out;
+  position: relative;
+}
+.btn {
+  text-align: center;
+  padding-block: 1.5rem;
+}
+.dot-holder {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid gray;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+button {
+  padding: 0.7rem 1.4rem;
+}
+
+@keyframes shower {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dot {
+  width: 24px;
+  aspect-ratio: 1;
+  background-color: rgb(117, 117, 117);
+  border-radius: 50%;
+  cursor: pointer;
+}
